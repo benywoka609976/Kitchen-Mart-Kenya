@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Kitchen Mart Kenya</title>
+    <meta name="description" content="Review your cart items at Kitchen Mart Kenya. Secure cash on delivery available.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="Kitchen Mart Kenya" class="logo-img">
+                        <h1>Kitchen Mart Kenya</h1>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <a href="tel:0714227080" class="call-btn">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/254714227080" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="wishlist.html">Wishlist (<span class="wishlist-count">0</span>)</a></li>
+                    <li><a href="cart.html" class="active">Cart (<span class="cart-count">0</span>)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your items and proceed to checkout</p>
+        </div>
+    </section>
+
+    <!-- Cash on Delivery Banner -->
+    <section class="cod-banner">
+        <div class="container">
+            <h3><i class="fas fa-shield-alt"></i> Secure Cash on Delivery</h3>
+            <p>No upfront payments required. Pay only when you receive your order.</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-container">
+                <h2>Your Cart Items</h2>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">KSh 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span>FREE</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span id="cart-total">KSh 0</span>
+                    </div>
+                    
+                    <button class="checkout-btn">
+                        <i class="fab fa-whatsapp"></i> Send Order
+                    </button>
+                    
+                    <button class="empty-cart-btn">
+                        <i class="fas fa-trash"></i> Empty Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="products.html" class="cta-button">Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Notice -->
+    <section class="security-notice">
+        <div class="container">
+            <div class="cod-banner">
+                <h3><i class="fas fa-lock"></i> Your Security is Our Priority</h3>
+                <p>With our cash on delivery system, you never have to worry about online payment risks. Inspect your items before paying.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kitchen Mart Kenya</h3>
+                    <p>Your one-stop destination for all kitchen needs. Quality products, affordable prices, and secure cash on delivery.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:0714227080">0714 227 080</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254714227080">WhatsApp</a></li>
+                        <li><i class="fas fa-envelope"></i> info@kitchenmart.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kitchen Mart Kenya. All rights reserved. | Secure Cash on Delivery Across Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
